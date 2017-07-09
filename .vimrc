@@ -40,7 +40,7 @@ Plugin 'vim-airline/vim-airline-themes'
 " Plugin 'fholgado/minibufexpl.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'vim-scripts/lookupfile'
+" Plugin 'vim-scripts/lookupfile'
 Plugin 'Valloric/YouCompleteMe'
 
 " non github
@@ -64,4 +64,4 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-source ~/.vimrc_local
+source /Users/bindo/.vimrc_local

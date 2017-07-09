@@ -3,7 +3,6 @@ set tabstop=2       " tab width
 set softtabstop=2   " backspace
 set shiftwidth=2    " indent width"
 set colorcolumn=300
-
 set noautoindent
 set nosmartindent
 set nocindent
@@ -103,10 +102,13 @@ let g:EasyGrepIgnoreCase = 1 " not ignorecase:0
 let g:EasyGrepFilesToExclude = "*.bak,cscope.*,*.a,*.o,*.pyc,*.tmp,*.swp,*.swo,*.tag,*.tags,spec,bin,build"
 
 " airline
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#enabled = 0
 " let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_theme='luna'
 
 " buffer switch
 nnoremap <C-b> :bn<CR>
+
+" youcommpleteme
+highlight Pmenu ctermfg=15 ctermbg=0 guifg=#eeeeee guibg=#111111
