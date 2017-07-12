@@ -113,3 +113,6 @@ nnoremap <C-b> :bn<CR>
 
 " youcommpleteme
 highlight Pmenu ctermfg=15 ctermbg=0 guifg=#eeeeee guibg=#111111
+
+" ctrl+c back to cmd mode and save file
+nnoremap <c-c> <esc>:w<CR><CR>
