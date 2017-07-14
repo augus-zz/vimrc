@@ -1,9 +1,9 @@
-## written by mr.zouqilin@gmail.com
+### written by mr.zouqilin@gmail.com
 
-## Plugin Manager
+### Plugin Manager
 [Vundle](https://github.com/VundleVim/Vundle.vim)
 
-### plugin
+#### plugin
 ```config
 " Plugins
 Plugin 'dkprice/vim-easygrep'
@@ -29,8 +29,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'scrooloose/nerdtree' Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Yggdroot/indentLine'
 " Plugin 'plasticboy/vim-markdown'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -54,23 +53,51 @@ Plugin 'flazz/vim-colorschemes'
 " Plugin 'tomasr/molokai'
 ```
 
-## shortcuts
+### shortcuts
 
-### jump
-Ctrl+] => goto definition
-Ctrl+t => back to previous position
-Ctrl+o => goto last postion
+#### common
+* Ctrl+c => switch to cmd mode and save current file
+* Ctrl+b => circle buffer
+* "+\*+yy => copy current line to system clipboard
 
-### search
-Ctrl+P => find file by filename
-Leader + vv => search the the point
+#### NERDTree
+* F6 => toggle NERDTree
 
-### comment
+#### TagBar
+* F6 => toggle TagBar
 
-### fold
-z+a => toggle fold
-z+o => unfold
-z+c => fold
+#### jump
+* # => find next occurrence
+* ( => jump back a sentence
+* ) => jump forward a sentence
+* { => jump back a paragraph
+* } => jump forward a paragraph
+* ctrl+] => goto definition
+* ctrl+t => back to previous position
+* ctrl+o => goto last postion
 
-### format
-= => format the code(block selection)
+#### search
+* ctrl+P => find file by filename
+* leader + vv => search the the point
+
+#### comment
+* leader+cc => comment current line
+* leader+c<space> => toogle comment
+* leader+cm 只用一组符号来注释
+* leader+cy => 注释并复制
+* leader+cs => 优美的注释
+* leader+cu => 取消注释
+
+#### fold
+* z+a => toggle fold
+* z+o => unfold
+* z+c => fold
+
+#### format
+* = => format the code(block selection)
+
+#### window switch
+* ctrl+w j => switch to below window
+* ctrl+w k => switch to top window
+* ctrl+w h => switch to left window
+* ctrl+w l => switch to right window
