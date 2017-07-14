@@ -67,7 +67,7 @@ Plugin 'flazz/vim-colorschemes'
 * F6 => toggle TagBar
 
 #### jump
-* # => find next occurrence
+* \# => find next occurrence
 * ( => jump back a sentence
 * ) => jump forward a sentence
 * { => jump back a paragraph
@@ -82,7 +82,7 @@ Plugin 'flazz/vim-colorschemes'
 
 #### comment
 * leader+cc => comment current line
-* leader+c<space> => toogle comment
+* leader+c[space] => toogle comment
 * leader+cm 只用一组符号来注释
 * leader+cy => 注释并复制
 * leader+cs => 优美的注释
