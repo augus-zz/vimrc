@@ -8,10 +8,13 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" plugin
+" Plugins
 Plugin 'dkprice/vim-easygrep'
 Plugin 'yegappan/grep'
+" Plugin 'brookhong/cscope.vim'
+" Plugin 'chazy/cscope_maps'
 
+" Plugin language
 Plugin 'leafgarland/typescript-vim'
 Plugin 'mhartington/vim-angular2-snippets'
 Plugin 'airblade/vim-gitgutter'

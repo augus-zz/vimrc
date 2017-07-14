@@ -16,7 +16,7 @@ syntax on
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 
-set number                                                        " show line numbers
+" set number                                                        " show line numbers
 set nobackup
 set backspace=2
 
@@ -106,7 +106,7 @@ let g:EasyGrepFilesToExclude = "*.bak,cscope.*,*.a,*.o,*.pyc,*.tmp,*.swp,*.swo,*
 let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#enabled = 0
 " let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline_theme='luna'
+let g:airline_theme='kolor'
 
 " buffer switch
 nnoremap <C-b> :bn<CR>
@@ -116,3 +116,32 @@ highlight Pmenu ctermfg=15 ctermbg=0 guifg=#eeeeee guibg=#111111
 
 " ctrl+c back to cmd mode and save file
 nnoremap <c-c> <esc>:w<CR><CR>
+
+" ctags
+set tags=tags;
+set autochdir
+
+" cscope setting
+" if has("cscope")
+"   set csprg=/usr/local/bin/cscope
+"   set csto=1
+"   set cst
+"   set nocsverb
+"   " add any database in current directory
+"   if filereadable("cscope.out")
+"     cs add cscope.out
+"     " else add database pointed to by environment
+"   elseif $CSCOPE_DB != ""
+"     cs add $CSCOPE_DB
+"   endif
+"   set csverb
+" endif
+"
+" nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+" nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+" nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+" nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+" nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+" nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+" nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+" nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
