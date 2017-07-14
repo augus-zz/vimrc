@@ -1,13 +1,10 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+## written by mr.zouqilin@gmail.com
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+## Plugin Manager
+[Vundle](https://github.com/VundleVim/Vundle.vim)
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
+### plugin
+```config
 " Plugins
 Plugin 'dkprice/vim-easygrep'
 Plugin 'yegappan/grep'
@@ -55,18 +52,25 @@ Plugin 'genutils'
 " theme
 Plugin 'flazz/vim-colorschemes'
 " Plugin 'tomasr/molokai'
+```
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+## shortcuts
 
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+### jump
+Ctrl+] => goto definition
+Ctrl+t => back to previous position
+Ctrl+o => goto last postion
 
-source /Users/bindo/.vimrc_local
+### search
+Ctrl+P => find file by filename
+Leader + vv => search the the point
+
+### comment
+
+### fold
+z+a => toggle fold
+z+o => unfold
+z+c => fold
+
+### format
+= => format the code(block selection)
