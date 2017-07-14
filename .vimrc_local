@@ -119,7 +119,18 @@ nnoremap <c-c> <esc>:w<CR><CR>
 
 " ctags
 set tags=tags;
-set autochdir
+" set autochdir
+
+" easytags
+let g:easytags_cmd = '/usr/local/bin/ctags'
+let g:easytags_always_enabled = 1
+let g:easytags_async = 1
+" let g:easytags_events = ['BufWritePost']
+let g:easytags_autorecurse = 1
+let g:easytags_include_members = 1
+let g:easytags_auto_highlight = 1
+let g:easytags_auto_update = 1
+let g:easytags_updatetime_min = 60000
 
 " cscope setting
 " if has("cscope")

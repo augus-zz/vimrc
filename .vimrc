@@ -13,6 +13,8 @@ Plugin 'dkprice/vim-easygrep'
 Plugin 'yegappan/grep'
 " Plugin 'brookhong/cscope.vim'
 " Plugin 'chazy/cscope_maps'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-easytags'
 
 " Plugin language
 Plugin 'leafgarland/typescript-vim'
