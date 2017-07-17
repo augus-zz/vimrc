@@ -57,7 +57,8 @@ Plugin 'flazz/vim-colorschemes'
 
 #### common
 * Ctrl+c => switch to cmd mode and save current file
-* Ctrl+b => circle buffer
+* Ctrl+b => next buffer
+* Shift+b => previous buffer
 * "+\*+yy => copy current line to system clipboard
 
 #### NERDTree
