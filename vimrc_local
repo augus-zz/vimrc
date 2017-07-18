@@ -2,7 +2,7 @@ set expandtab       " expand tab to space
 set tabstop=2       " tab width
 set softtabstop=2   " backspace
 set shiftwidth=2    " indent width"
-set colorcolumn=300
+" set colorcolumn=300
 set noautoindent
 set nosmartindent
 set nocindent
