@@ -16,7 +16,8 @@ syntax on
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 
-" set number                                                        " show line numbers
+" show line numbers
+" set number
 set nobackup
 set backspace=2
 
@@ -126,7 +127,10 @@ nnoremap <C-b> :bn<CR>
 nnoremap <S-B> :bp<CR>
 
 " ctrl+c back to cmd mode and save file
-nnoremap <C-c> <esc>:w<CR><CR>
+nnoremap <C-c> <esc><CR>
+" nnoremap <C-c> <esc>:w<CR><CR>
+nmap <C-s> :w<CR>
+imap <C-s> <Esc>:w<CR>
 
 " youcommpleteme
 highlight Pmenu ctermfg=15 ctermbg=0 guifg=#eeeeee guibg=#111111

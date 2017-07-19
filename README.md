@@ -56,7 +56,8 @@ Plugin 'flazz/vim-colorschemes'
 ### shortcuts
 
 #### common
-* Ctrl+c => switch to cmd mode and save current file
+* Ctrl+c => switch to cmd mode
+* Ctrl+s => save current file (pls add `alias vim="stty stop '' -ixoff; vim"`)
 * Ctrl+b => next buffer
 * Shift+b => previous buffer
 * "+\*+yy => copy current line to system clipboard
