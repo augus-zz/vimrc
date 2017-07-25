@@ -56,17 +56,18 @@ Plugin 'flazz/vim-colorschemes'
 ### shortcuts
 
 #### common
-* Ctrl+c => switch to cmd mode
-* Ctrl+s => save current file (pls add `alias vim="stty stop '' -ixoff; vim"`)
-* Ctrl+b => next buffer
-* Shift+b => previous buffer
-* "+\*+yy => copy current line to system clipboard
+* ctrl+c => switch to cmd mode
+* ctrl+s => save current file (pls add `alias vim="stty stop '' -ixoff; vim"`)
+* ctrl+b => next buffer
+* shift+b => previous buffer
+* "+\++yy => copy current line to system clipboard
+* "+\++p=> paste from system clipboard
 
 #### NERDTree
-* F6 => toggle NERDTree
+* f6 => toggle NERDTree
 
 #### TagBar
-* F6 => toggle TagBar
+* f6 => toggle TagBar
 
 #### jump
 * \# => find next occurrence
