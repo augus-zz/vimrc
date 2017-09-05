@@ -46,7 +46,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'vim-scripts/lookupfile'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 " non github
 Plugin 'c.vim'
