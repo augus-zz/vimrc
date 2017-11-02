@@ -10,7 +10,7 @@ set nocindent
 " enable syntax hightlight and completion
 syntax on
 
-let &titlestring = expand('%:p')
+let &titlestring = @%
 set title
 
 " highlight current line
@@ -44,7 +44,7 @@ endif
 
 " nerd tree
 let NERDTreeWinPos = "left"
-let NERDTreeWinSize=25
+let NERDTreeWinSize=18
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
 let NERDTreeShowBookmarks=1
@@ -120,10 +120,23 @@ let g:EasyGrepIgnoreCase = 1 " not ignorecase:0
 let g:EasyGrepFilesToExclude = "*.bak,cscope.*,*.a,*.o,*.pyc,*.tmp,*.swp,*.swo,*.tag,*.tags,spec,bin,build"
 
 " airline
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 0
 " let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline_theme='kolor'
+let g:airline_theme='bubblegum'
+let g:airline_mode_map = {
+      \ '__' : '-',
+      \ 'n' : 'N',
+      \ 'i' : 'I',
+      \ 'R' : 'R',
+      \ 'c' : 'C',
+      \ 'v' : 'V',
+      \ 'V' : 'V',
+      \ '^V' : 'V',
+      \ 's' : 'S',
+      \ 'S' : 'S',
+      \ '^S' : 'S',
+      \ }
 
 " buffer switch
 nnoremap <C-b> :bn<CR>
