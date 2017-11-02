@@ -123,7 +123,7 @@ let g:EasyGrepFilesToExclude = "*.bak,cscope.*,*.a,*.o,*.pyc,*.tmp,*.swp,*.swo,*
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 0
 " let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline_theme='bubblegum'
+let g:airline_theme='wombat'
 let g:airline_mode_map = {
       \ '__' : '-',
       \ 'n' : 'N',
