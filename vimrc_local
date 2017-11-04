@@ -10,7 +10,7 @@ set nocindent
 " enable syntax hightlight and completion
 syntax on
 
-let &titlestring = @%
+let &titlestring = expand('%:p')
 set title
 
 " highlight current line
