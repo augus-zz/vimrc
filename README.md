@@ -1,5 +1,17 @@
 ### written by mr.zouqilin@gmail.com
 
+--------------------------------------------
+
+### Installation
+Firstly, Clone this Repo.
+```bash
+git clone https://github.com/zouqilin/vim-cfg $HOME/.vim
+cd $HOME/.vim/ && git submodule update --init
+```
+Secondly, Open vim, then type `:BundleInstall` to install plugins.
+
+note: Upgrade plugins by this type `:BundleInstall!` in the vim command mode.
+
 ### Plugin Manager
 [Vundle](https://github.com/VundleVim/Vundle.vim)
 
