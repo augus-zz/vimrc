@@ -5,8 +5,10 @@
 ### Installation
 Firstly, Clone this Repo.
 ```bash
-git clone https://github.com/zouqilin/vim-cfg $HOME/.vim
+git clone https://github.com/zouqilin/vimrc $HOME/.vim
 cd $HOME/.vim/ && git submodule update --init
+ln -sf $HOME/.vim/vimrc $HOME/.vimrc
+ln -sf $HOME/.vim/vimrc_local $HOME/.vimrc_local
 ```
 Secondly, Open vim, then type `:BundleInstall` to install plugins.
 
