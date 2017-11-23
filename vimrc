@@ -17,14 +17,14 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 
 " Plugin language
-Plugin 'leafgarland/typescript-vim'
-Plugin 'mhartington/vim-angular2-snippets'
+" Plugin 'leafgarland/typescript-vim'
+" Plugin 'mhartington/vim-angular2-snippets'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'fatih/vim-go'
-Plugin 'pangloss/vim-javascript'
+" Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
 
 " Plugin 'vim-scripts/taglist.vim'
