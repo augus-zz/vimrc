@@ -120,7 +120,8 @@ Plugin 'flazz/vim-colorschemes'
 * f3 => autoformat js and save
 
 #### window switch
-* ctrl+w j => switch to below window
+* ctrl+w w => rotate to switch to right window
+* ctrl+w l => switch to right window
 * ctrl+w k => switch to top window
 * ctrl+w h => switch to left window
 * ctrl+w l => switch to right window
