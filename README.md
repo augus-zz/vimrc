@@ -19,6 +19,8 @@ note: Upgrade plugins by this type `:BundleInstall!` in the vim command mode.
 
 #### plugin
 ```config
+Plugin 'VundleVim/Vundle.vim'
+
 " Plugins
 Plugin 'dkprice/vim-easygrep'
 Plugin 'yegappan/grep'
@@ -28,22 +30,25 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 
 " Plugin language
-Plugin 'leafgarland/typescript-vim'
-Plugin 'mhartington/vim-angular2-snippets'
+" Plugin 'leafgarland/typescript-vim'
+" Plugin 'mhartington/vim-angular2-snippets'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'fatih/vim-go'
 Plugin 'pangloss/vim-javascript'
-Plugin 'elzr/vim-json'
+" Plugin 'elzr/vim-json'
+Plugin 'scrooloose/syntastic'
+Plugin 'Chiel92/vim-autoformat'
 
 " Plugin 'vim-scripts/taglist.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree' Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Yggdroot/indentLine'
 " Plugin 'plasticboy/vim-markdown'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -56,7 +61,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'vim-scripts/lookupfile'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 " non github
 Plugin 'c.vim'
@@ -81,7 +86,7 @@ Plugin 'flazz/vim-colorschemes'
 * f6 => toggle NERDTree
 
 #### TagBar
-* f6 => toggle TagBar
+* f5 => toggle TagBar
 
 #### jump
 * \# => find next occurrence
@@ -112,6 +117,7 @@ Plugin 'flazz/vim-colorschemes'
 
 #### format
 * = => format the code(block selection)
+* f3 => autoformat js and save
 
 #### window switch
 * ctrl+w j => switch to below window
