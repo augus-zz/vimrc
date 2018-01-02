@@ -44,7 +44,7 @@ endif
 
 " nerd tree
 let NERDTreeWinPos = "left"
-let NERDTreeWinSize=18
+let NERDTreeWinSize=20
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
 let NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$',  '\~$']
 let NERDTreeShowBookmarks=1
@@ -75,7 +75,7 @@ let NERDSpaceDelims=1
 let NERDCompactSexyComs=1
 
 " ctrlp
-set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store,tags  " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store,tags,node_modules/*  " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 let g:ctrlp_working_path_mode = 'ra'
 

@@ -28,6 +28,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
 Plugin 'scrooloose/syntastic'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'mxw/vim-jsx'
+Plugin 'justinj/vim-react-snippets'
 
 " Plugin 'vim-scripts/taglist.vim'
 Plugin 'tpope/vim-fugitive'
