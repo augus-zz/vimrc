@@ -118,6 +118,7 @@ Plugin 'flazz/vim-colorschemes'
 #### format
 * = => format the code(block selection)
 * f3 => autoformat js and save
+* ctrl+f => format js/json/jsx/html/css/scss
 
 #### window switch
 * ctrl+w w => rotate to switch to right window
