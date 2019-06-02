@@ -14,10 +14,11 @@ Plugin 'yegappan/grep'
 " Plugin 'brookhong/cscope.vim'
 " Plugin 'chazy/cscope_maps'
 Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-easytags'
+" Plugin 'xolox/vim-easytags'
 
 " Plugin language
-" Plugin 'leafgarland/typescript-vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'ianks/vim-tsx'
 " Plugin 'mhartington/vim-angular2-snippets'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-ruby/vim-ruby'

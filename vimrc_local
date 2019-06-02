@@ -20,11 +20,13 @@ set title
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 
 " show line numbers
-" set number
+set number
 set nobackup
 set backspace=2
 
 " theme
+" color onedark
+" colorscheme onedark
 color molokai
 colorscheme molokai
 
@@ -256,6 +258,10 @@ let g:easytags_updatetime_min = 120000
 " javascript eslint
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_always_populate_loc_list = 1
+
+" jsx
+let g:jsx_ext_required = 0
+
 
 " autoformat
 let g:formatdef_eslint = '"SRC=eslint-temp-${RANDOM}.js; cat - >$SRC; eslint --fix $SRC >/dev/null 2>&1; cat $SRC | perl -pe \"chomp if eof\"; rm -f $SRC"'
