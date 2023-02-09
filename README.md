@@ -121,6 +121,8 @@ Plugin 'flazz/vim-colorschemes'
 * ctrl+f => format js/json/jsx/html/css/scss
 
 #### window switch
+* ctrl+w v => split vertically
+* ctrl+w s => split horizontally
 * ctrl+w w => rotate to switch to right window
 * ctrl+w l => switch to right window
 * ctrl+w k => switch to top window
