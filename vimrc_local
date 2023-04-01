@@ -271,3 +271,62 @@ noremap <F3> :Autoformat<CR>:w<CR>
 " json
 let g:vim_json_syntax_conceal = 0
 let g:vim_json_warnings=0
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
+" Deoplete mappings (use c-j and c-k to navigate selection)
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+
+" disable lsp syntax highlighting (it's ugly)
+let g:lsp_diagnostics_enabled = 0
+
+" prettier
+let g:prettier#autoformat = 1
+let g:prettier#exec_cmd_async = 1
+let g:prettier#config#semi = 'false'
+let g:prettier#config#trailingComma = 'none'
+let g:prettier#config#single_quote = 'true'
+
+" ALE settings
+" use ale as a deoplete source
+let g:ale_completion_enabled = 1
+let g:ale_completion_delay = 100
+let g:ale_completion_enabled = 0
+let g:ale_completion_max_suggestions = 50
+
+" fix on save
+let g:ale_fix_on_save = 1
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_python_flake8_options = '--max-line-length 88 --extend-ignore=E203'
+let g:ale_typescript_prettier_use_local_config = 1
+let g:ale_typescript_prettier_use_local_config = 1
+
+" use eslint, prettier, and stylelint
+let g:ale_fixers = {
+      \    'javascript': ['eslint', 'prettier'],
+      \    'typescript': ['eslint', 'prettier'],
+      \    'css': ['stylelint', 'prettier'],
+      \    'html': ['prettier']
+      \}
+
+" use eslint for ts and js
+let g:ale_linters = {
+      \    'typescript': [ 'eslint' ],
+      \    'javascript': [ 'eslint' ]
+      \}
+
+" helpers for toggling fix_on_save
+command! ALEDisableFixers       let g:ale_fix_on_save=0
+command! ALEEnableFixers        let g:ale_fix_on_save=1
+command! ALEDisableFixersBuffer let b:ale_fix_on_save=0
+command! ALEEnableFixersBuffer  let b:ale_fix_on_save=1
+
+" use bracket bindings to navgiate ale specific errors/warnings
+nmap <silent> [r <Plug>(ale_previous_wrap)
+nmap <silent> ]r <Plug>(ale_next_wrap)
