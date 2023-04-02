@@ -58,6 +58,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'vim-scripts/lookupfile'
 " Plugin 'Valloric/YouCompleteMe'
+Plugin 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
 "
 " Deoplete
 Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

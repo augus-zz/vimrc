@@ -97,7 +97,11 @@ Plugin 'flazz/vim-colorschemes'
 * ctrl+] => goto definition
 * ctrl+t => back to previous position
 * ctrl+o => goto last postion
-* ctrl+w f => open file in current position
+
+### file locate
+* gf => open file in current position
+* ctrl+w f => open file in current position in a new window
+* ctrl+w gf => open file in current position in a new tab
 
 #### search
 * ctrl+P => find file by filename

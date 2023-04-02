@@ -264,9 +264,9 @@ let g:jsx_ext_required = 0
 
 
 " autoformat
-let g:formatdef_eslint = '"SRC=eslint-temp-${RANDOM}.js; cat - >$SRC; eslint --fix $SRC >/dev/null 2>&1; cat $SRC | perl -pe \"chomp if eof\"; rm -f $SRC"'
-let g:formatters_javascript = ['eslint']
-noremap <F3> :Autoformat<CR>:w<CR>
+" let g:formatdef_eslint = '"SRC=eslint-temp-${RANDOM}.js; cat - >$SRC; eslint --fix $SRC >/dev/null 2>&1; cat $SRC | perl -pe \"chomp if eof\"; rm -f $SRC"'
+" let g:formatters_javascript = ['eslint']
+" noremap <F3> :Autoformat<CR>:w<CR>
 
 " json
 let g:vim_json_syntax_conceal = 0
@@ -295,6 +295,7 @@ let g:ale_completion_enabled = 1
 let g:ale_completion_delay = 100
 let g:ale_completion_enabled = 0
 let g:ale_completion_max_suggestions = 50
+let g:ale_completion_autoimport = 1
 
 " fix on save
 let g:ale_fix_on_save = 1
@@ -306,14 +307,30 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_python_flake8_options = '--max-line-length 88 --extend-ignore=E203'
 let g:ale_typescript_prettier_use_local_config = 1
 let g:ale_typescript_prettier_use_local_config = 1
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5 --no-semi'
+
+autocmd FileType javascript map <buffer> <c-]> :ALEGoToDefinition<CR>
+autocmd FileType typescript map <buffer> <c-]> :ALEGoToDefinition<CR>
+autocmd FileType typescriptreact map <buffer> <c-]> :ALEGoToDefinition<CR>
 
 " use eslint, prettier, and stylelint
+" let g:ale_fixers = {
+      " \    'javascript': ['eslint', 'prettier'],
+      " \    'typescript': ['eslint', 'prettier'],
+      " \    'css': ['stylelint', 'prettier'],
+      " \    'html': ['prettier']
+      " \}
+
+let js_fixers = ['prettier', 'eslint']
 let g:ale_fixers = {
-      \    'javascript': ['eslint', 'prettier'],
-      \    'typescript': ['eslint', 'prettier'],
-      \    'css': ['stylelint', 'prettier'],
-      \    'html': ['prettier']
-      \}
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': js_fixers,
+\   'javascript.jsx': js_fixers,
+\   'typescript': js_fixers,
+\   'typescriptreact': js_fixers,
+\   'css': ['prettier'],
+\   'json': ['prettier'],
+\}
 
 " use eslint for ts and js
 let g:ale_linters = {
@@ -330,3 +347,9 @@ command! ALEEnableFixersBuffer  let b:ale_fix_on_save=1
 " use bracket bindings to navgiate ale specific errors/warnings
 nmap <silent> [r <Plug>(ale_previous_wrap)
 nmap <silent> ]r <Plug>(ale_next_wrap)
+
+" coc
+" Make <CR> to accept selected completion item or notify coc.nvim to format
+" <C-g>u breaks current undo, please make your own choice
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
