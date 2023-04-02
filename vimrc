@@ -16,6 +16,7 @@ Plugin 'yegappan/grep'
 Plugin 'xolox/vim-misc'
 " Plugin 'xolox/vim-easytags'
 Plugin 'prettier/vim-prettier'
+Plugin 'will133/vim-dirdiff'
 
 " Plugin language
 Plugin 'typescript-vim'
