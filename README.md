@@ -97,6 +97,7 @@ Plugin 'flazz/vim-colorschemes'
 * ctrl+] => goto definition
 * ctrl+t => back to previous position
 * ctrl+o => goto last postion
+* ctrl+w f => open file in current position
 
 #### search
 * ctrl+P => find file by filename
@@ -114,6 +115,8 @@ Plugin 'flazz/vim-colorschemes'
 * z+a => toggle fold
 * z+o => unfold
 * z+c => fold
+* z+m => fold all
+* z+r => unfold all
 
 #### format
 * = => format the code(block selection)
