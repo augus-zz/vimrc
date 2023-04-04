@@ -19,7 +19,8 @@ Plugin 'prettier/vim-prettier'
 Plugin 'will133/vim-dirdiff'
 
 " Plugin language
-Plugin 'typescript-vim'
+" Plugin 'typescript-vim'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'vim-javascript'
 Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'styled-components/vim-styled-components', { 'branch': 'main' }
